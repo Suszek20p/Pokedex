@@ -28,7 +28,7 @@ border: 5px solid #ff0000;
 ul>li
 {
 display: inline-block;
-padding: 10px 30px;
+padding: 5px 15px;
 }
 
 a{
@@ -42,7 +42,7 @@ background-color: #ff0000;
 box-shadow: 1px 1px 4px RGBA(0,0,0,.1);
 width: 100%;
 z-index: 10;
-position: fixed;
+position: absolute;
 }
 
 header ul{
@@ -62,7 +62,7 @@ border-right: 1px solid #ff0000;
 
 header li a:hover{
 
-background-color: #ff3c00;
+background-color: #ff631b;
 }
 
 header .menu{
@@ -108,7 +108,7 @@ width: 18px;
 position: relative;
 }
 
-header .menu-icon .navicon:before, header .menu-icon .navicon:after{
+ header .menu-icon .navicon:before, header .menu-icon .navicon:after{
 
 background-color: #000;
 content: " "; 
@@ -166,7 +166,7 @@ transform: rotate(-45deg) translateY(6.7px);
     .menu-icon{
         display: none;
     }
-}
+} 
 
 article
 {
@@ -188,24 +188,13 @@ article
 .optoczka
 {
     border: 5px solid #ff3c00;
-    margin-left: 20%;
-    margin-right: 15%;
+    margin-left: 13%;
+    margin-right: 13%;
 }
 .nie_ma_mnie
 {
     display: none;
 }
-
-.show_me
-{
-    display: none;
-}
-
-div:hover .show_me
-{
-    display: block;
-}
-
 
 table
 {
@@ -246,4 +235,10 @@ caption
 
     /* color:red; */
 
+}
+
+.w_lini
+{
+    display: inline-block;
+    justify-content: center;
 }

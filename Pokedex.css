@@ -25,13 +25,13 @@ ul > li {
 a {
 	color: #000000;
 	text-decoration: none;
+	font-size: 20px;
 }
 
 header {
 	background-color: #ff0000;
-	box-shadow: 1px 1px 4px RGBA(0, 0, 0, 0.1);
 	width: 100%;
-	z-index: 10;
+	height: 90px;
 	position: absolute;
 }
 

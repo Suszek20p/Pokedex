@@ -157,15 +157,14 @@ article.pokemons {
 
 	border: 2px solid #000;
 	height: 200px;
-	margin-left: 9%;
-	margin-right: 9%;
+	margin: auto;
 	margin-bottom: 10%;
 	background-color: #FFF;
 	overflow: auto;
 	display: grid;
 	grid-template-columns: auto auto auto;
-
-
+	text-align: center;
+	width: 70%;
 }
 
 article div {

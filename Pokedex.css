@@ -33,7 +33,7 @@ a {
 header {
 	background-color: #ff0000;
 	width: 100%;
-	display: flex;
+
 }
 
 header ul {
@@ -117,7 +117,6 @@ td {
 
 .pod_headerem {
 	margin-top: 100px;
-	display: flex;
 }
 
 .now {

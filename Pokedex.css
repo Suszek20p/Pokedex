@@ -4,7 +4,6 @@ body {
 	font-family: Comic Sans MS;
 	background-color: #CFCFCF;
 	color: #000000;
-	border: 20px solid #000;
 }
 
 nav {
@@ -16,7 +15,7 @@ nav {
 
 nav>ul {
 	text-align: center;
-	border: 5px solid #ff0000;
+
 }
 
 ul>li {
@@ -144,7 +143,7 @@ article.home {
 
 .opis {
 	float: right;
-	height: 700%;
+	height: 700px;
 	width: 50%;
 	margin-top: 5%;
 	margin-bottom: 5%;
@@ -184,7 +183,14 @@ footer p {
 	margin-right: 10px;
 }
 
+input{
+	width: 200px;
+	height: 50px;
+}
 
+.info{
+	text-align: center;
+}
 /* Staty */
 
 .staty {
@@ -244,3 +250,5 @@ footer p {
 	width: 65px;
 	height: 20px;
 }
+
+

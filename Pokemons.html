@@ -48,27 +48,121 @@
     <main class="pod_headerem">
 
         <article class="pokemons">
-            <div>Charmander #004</div>
-            <div>Greninja #658</div>
-            <div>Serperior #497</div>            
-            <div>Eevee #133</div>
-            <div>Amoonguss #591</div>
-            <div>Metapod #011</div>
-            <div>Zeraora #807</div>
-            <div>Regirock #377</div>
-            <div>Groudon #383</div>
-            <div>Pidove #519</div>
-            <div>Lucario #448</div>
-            <div>Zoroark #571</div>
-            <div>Espeon #196</div>
-            <div>Shedinja #292</div>
-            <div>Metagross #376</div>
-            <div>Weavile #461</div>
-            <div>Gardevoir #282</div>
-            <div>Goomy #708</div>
+            <div><input type="button" value="Charmander #004" class="Charmander" /></div>
+            <div><input type="button" value="Greninja #658" class="Greninja"/></div>
+            <div><input type="button" value="Serperior #497" class="Serperior"/></div>            
+            <div><input type="button" value="Eevee #133" class="Eevee"/></div>
+            <div><input type="button" value="Amoonguss #591" class="Amoonguss"/></div>
+            <div><input type="button" value="Metapod #011" class="Metapod"/></div>
+            <div><input type="button" value="Zeraora #807" class="Zeraora"/></div>
+            <div><input type="button" value="Regirock #377" class="Regirock"/></div>
+            <div><input type="button" value="Groudon #383" class="Groudon"/></div>
+            <div><input type="button" value="Pidove #519" class="Pidove"/></div>
+            <div><input type="button" value="Lucario #448" class="Lucario"/></div>
+            <div><input type="button" value="Zoroark #571" class="Zoroark"/></div>
+            <div><input type="button" value="Espeon #196" class="Espeon"/></div>
+            <div><input type="button" value="Shedinja #292" class="Shedinja"/></div>
+            <div><input type="button" value="Metagross #376" class="Metagross"/></div>
+            <div><input type="button" value="Weavile #461" class="Weavile"/></div>
+            <div><input type="button" value="Gardevoir #282" class="Gardevoir"/></div>
+            <div><input type="button" value="Goomy #708" class="Goomy"/></div>
         </article>
 
+
+
+			
+			<p class="name info"></p>
+            <img class="obraz">
+            <p class="type"></p>
+            <p class="category"></p>
+            <p class="ability"></p>
+            <p class="height"></p>
+            <p class="weight"></p>
+            <p class="grender"></p>
+            <p class="catch"></p>
+            <p class="weakness"></p>
+            <p class="resistance"></p>
+
+            <table>
+                <thead>
+
+                    <tr class="srodek_text">
+
+                        <td> Unevolved </td>
+                        <td> Requirements </td>
+                        <td> First evolution </td>
+                        <td> Requirements </td>
+                        <td> Second evolution </td>
+
+                    </tr>
+
+                </thead>
+
+                <tbody class="srodek_text">
+
+                    <tr>
+                        <td><img class="tcharmander">
+                            <p class="tpcharmander"></p>
+                        </td>
+                        <td class="requirements1"></td>
+                        <td><img class="tcharmeleon">
+                            <p class="tpcharmeleon"></p>
+                        </td>
+                        <td class="requirements2"></td>
+                        <td><img class="tcharizard">
+                            <p class="tpcharizard"></p>
+                        </td>
+
+                    </tr>
+
+
+                </tbody>
+            </table>
+
+            
+
     </main>
+
+    <script>
+       
+
+			
+				
+				const charmander = document.querySelector("[class=Charmander]");
+
+				charmander.addEventListener("click", info004);
+
+				function info004() {
+					document.querySelector(".name").innerText = "Charmander #004";
+                    document.querySelector(".obraz").src="Charmander.png";
+                    document.querySelector(".type").innerText = "Type: Fire";
+                    document.querySelector(".category").innerText = "Categoty: Lizard";
+                    document.querySelector(".ability").innerText = "Abilities: Blaze";
+                    document.querySelector(".height").innerText = " Height: 0,6 m";
+                    document.querySelector(".weight").innerText = " Weight: 8,5 kg";
+                    document.querySelector(".grender").innerText = " Grender: ♂ / ♀";
+                    document.querySelector(".catch").innerText = " Catch Rate: 11,9%";
+                    document.querySelector(".weakness").innerText = " Weakness: Water / Ground / Rock";
+                    document.querySelector(".resistance").innerText = " Resistance: Bug / Steel / Fire / Grass / Ice / Fairy";
+
+                    document.querySelector(".tcharmander").src="Charmander2.png";                    
+                    document.querySelector(".tcharmeleon").src="Charmeleon2.png";
+                    document.querySelector(".tcharizard").src="Charizard2.png";
+                    document.querySelector(".requirements1").innerText = "16 LVL --> ";
+                    document.querySelector(".requirements2").innerText = "36 LVL --> ";
+                    document.querySelector(".tpcharmander").innerText = "Charmander";
+                    document.querySelector(".tpcharmeleon").innerText = "Charmeleon";
+                    document.querySelector(".tpcharizard").innerText = "Charizard";
+
+                    document.querySelector("body").style.backgroundColor = "FF9E67";
+                    document.querySelector("ul").style.backgroundColor = "FF7A00";
+                    document.querySelector(".now").style.backgroundColor = "FFAC30";
+                    document.querySelector(".now").style.color = "FF0000";
+				}
+
+
+ 
+    </script>
 </body>
 
 </html>

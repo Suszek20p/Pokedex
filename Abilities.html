@@ -1,0 +1,103 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="Pokedex.css">
+
+    <title>Projekt JS Pokedex</title>
+</head>
+
+<body>
+
+    <header>
+
+        <a href="#" class="logo"> POKEDEX </a>
+
+
+
+        <nav class="menu">
+            <ul>
+
+                <li> <a href="Pokedex.html"> Test </a> </li>
+
+                <li> <a href="Home.html"> Home </a> </li>
+
+                <li> <a href="Pokemons.html"> Pokemons </a> </li>
+
+                <li> <a href="Abilities.html" class="now"> Abilities </a> </li>
+
+                <li> <a href="Moves.html"> Moves </a> </li>
+
+                <li> <a href="Items.html"> Items </a> </li>
+
+                <li> <a href="Natures.html"> Natures </a> </li>
+
+                <li> <a href="Types.html"> Types </a> </li>
+
+                <li> <a href="#"> Berries </a> </li>
+
+                <li> <a href="#"> Status </a> </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main class="pod_headerem">
+
+        <article class="abilities">
+            <div><input type="button" value="Blaze" class="Blaze" /></div>
+            <div><input type="button" value="Protean" class="Protean"/></div>
+            <div><input type="button" value="Contrary" class="Contrary"/></div>            
+            <div><input type="button" value="Clear Body" class="ClearBody"/></div>
+        </article>
+
+
+        <p class="ability info"></p>
+
+            <script>
+        
+
+                
+                    
+                const blaze = document.querySelector("[class=Blaze]");
+
+                blaze.addEventListener("click", abilityBlaze);
+
+                function abilityBlaze() {
+                    document.querySelector(".ability").innerText = "Blaze - Wzmacnia ataki typu Fire, gdy HP Pokémona jest niskie (Powers up Fire-type moves when the Pokémon's HP is low)";
+                }
+
+                const protean = document.querySelector("[class=Protean]");
+
+                protean.addEventListener("click", abilityProtean);
+
+                function abilityProtean() {
+                    document.querySelector(".ability").innerText = "Protean - Zmienia typ Pokémona na ten sam typ ruchu, którego używa (Changes the Pokémon's type to the same type of the move it is using)";
+                }
+                
+                const contrary = document.querySelector("[class=Contrary]");
+
+                contrary.addEventListener("click", abilityContrary);
+
+                function abilityContrary() {
+                    document.querySelector(".ability").innerText = "Contrary - Odwraca wszystkie zmiany w stadiach statystyk Pokémona z tą Ability; jeśli efekt obniża statystykę, jest ona zwiększana zamiast tego, a jeśli efekt zwiększa statystykę, zamiast tego jest zmniejszana (Inverts all changes to the stat stages of a Pokémon with this Ability; if an effect would lower a stat, it is increased instead, and if an effect would increase a stat, it is decreased instead.) ";
+                }
+
+                const metalbody = document.querySelector("[class=ClearBody]");
+
+                metalbody.addEventListener("click", abilityClearBody);
+
+                function abilityClearBody() {
+                    document.querySelector(".ability").innerText = "Clear Body - Zapobiega redukcji statystyk powodowanej przez ruchy i zdolności innych Pokémonów (takie jak Scary Face i Intimidate), w tym Sticky Web. Clear Body nie zapobiega samoczynnym zmniejszeniu statystyk, takich jak ruchy takie jak Superpower lub Shell Smash (Prevents stat reduction caused by other Pokémon's moves and Abilities (such as Scary Face and Intimidate), including Sticky Web. Clear Body does not prevent self-inflicted stat reductions such as from moves like Superpower or Shell Smash)";
+                }
+
+
+            </script>      
+    </main>
+
+</body>
+
+</html>

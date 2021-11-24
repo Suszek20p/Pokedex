@@ -1,0 +1,140 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="Pokedex.css">
+
+    <title>Projekt JS Pokedex</title>
+</head>
+
+<body>
+
+    <header>
+
+        <a href="#" class="logo"> POKEDEX </a>
+
+
+
+        <nav class="menu">
+            <ul>
+
+                <li> <a href="Pokedex.html"> Test </a> </li>
+
+                <li> <a href="Home.html"> Home </a> </li>
+
+                <li> <a href="Pokemons.html"> Pokemons </a> </li>
+
+                <li> <a href="Abilities.html"> Abilities </a> </li>
+
+                <li> <a href="Moves.html" class="now"> Moves </a> </li>
+
+                <li> <a href="Items.html"> Items </a> </li>
+
+                <li> <a href="Natures.html"> Natures </a> </li>
+
+                <li> <a href="Types.html"> Types </a> </li>
+
+                <li> <a href="#"> Berries </a> </li>
+
+                <li> <a href="#"> Status </a> </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main class="pod_headerem">
+
+        <article class="moves">
+            <div><input type="button" value="Scratch" class="Scratch" /></div>
+            <div><input type="button" value="Growl" class="Growl"/></div>
+            <div><input type="button" value="Ember" class="Ember"/></div>            
+        </article>
+
+        <table>
+            <thead>
+        
+                <tr class="srodek_text">
+        
+                    <td> Move </td>
+                    <td> Type </td>
+                    <td> Kind </td>
+                    <td> Power </td>
+                    <td> Accuracy </td>
+                    <td> Effect </td>
+        
+        
+                </tr>
+        
+            </thead>
+        
+            <tbody class="srodek_text">
+        
+                <tr>
+                    <td><p class="Move"></p></td>
+                    <td class="Type"></td>
+                    <td class="Kind"></td>
+                    <td class="Power"></td>
+                    <td class="Accuracy"></td>
+                    <td class="Effect"></td>
+   
+                </tr>
+
+            </tbody>
+        </table> 
+       
+
+            <script>
+
+                const scratch = document.querySelector("[class=Scratch]");
+
+                scratch.addEventListener("click", infoScratch);
+
+                function infoScratch() {
+                        
+                    document.querySelector(".Move").innerText = "Scratch"
+                    document.querySelector(".Type").innerText = "Normal"     
+                    document.querySelector(".Kind").innerText = "Phisical"     
+                    document.querySelector(".Power").innerText = "40"     
+                    document.querySelector(".Accuracy").innerText = "100%"     
+                    document.querySelector(".Effect").innerText = "Scratch zadaje obrażenia i nie ma efektu dodatkowego (Scratch inflicts damage and has nos econdary effect)  "                            
+                    
+                }
+
+                const growl = document.querySelector("[class=Growl]");
+
+                growl.addEventListener("click", infoGrowl);
+
+                function infoGrowl() {
+                        
+                    document.querySelector(".Move").innerText = "Growl"
+                    document.querySelector(".Type").innerText = "Normal"     
+                    document.querySelector(".Kind").innerText = "Status"     
+                    document.querySelector(".Power").innerText = "0"     
+                    document.querySelector(".Accuracy").innerText = "100%"     
+                    document.querySelector(".Effect").innerText = "Growl zmniejsza statystykę Ataku wszystkich przeciwników o jeden poziom.Nie wpływa na Pokémony z umiejętnościami Soundproof, Hyper Cutter, Clear Body, White Smoke lub Full Metal Body (Growl decreases the Attack stat of all opponents by one stage. It does not affect Pokémon with the Abilities Soundproof, Hyper Cutter, Clear Body, White Smoke, or Full Metal Body)  "                            
+                    
+                }
+
+                const ember = document.querySelector("[class=Ember]");
+
+                ember.addEventListener("click", infoEmber);
+
+                function infoEmber() {
+                        
+                    document.querySelector(".Move").innerText = "Ember"
+                    document.querySelector(".Type").innerText = "Fire"     
+                    document.querySelector(".Kind").innerText = "Special"     
+                    document.querySelector(".Power").innerText = "40"     
+                    document.querySelector(".Accuracy").innerText = "100%"     
+                    document.querySelector(".Effect").innerText = "Ember zadaje obrażenia i ma 10% szans na spalenie celu (Ember deals damage and has a 10% chance of burning the target"          
+                }
+
+            </script>      
+    </main>
+
+</body>
+
+</html>

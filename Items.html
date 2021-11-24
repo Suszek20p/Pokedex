@@ -1,0 +1,95 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="Pokedex.css">
+
+    <title>Projekt JS Pokedex</title>
+</head>
+
+<body>
+
+    <header>
+
+        <a href="#" class="logo"> POKEDEX </a>
+
+
+
+        <nav class="menu">
+            <ul>
+
+                <li> <a href="Pokedex.html"> Test </a> </li>
+
+                <li> <a href="Home.html"> Home </a> </li>
+
+                <li> <a href="Pokemons.html"> Pokemons </a> </li>
+
+                <li> <a href="Abilities.html"> Abilities </a> </li>
+
+                <li> <a href="Moves.html"> Moves </a> </li>
+
+                <li> <a href="Items.html" class="now"> Items </a> </li>
+
+                <li> <a href="Natures.html"> Natures </a> </li>
+
+                <li> <a href="Types.html"> Types </a> </li>
+
+                <li> <a href="#"> Berries </a> </li>
+
+                <li> <a href="#"> Status </a> </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main class="pod_headerem">
+
+        <article class="items">
+            <div><input type="button" value="Charcoal" class="Charcoal" /></div>
+            <div><input type="button" value="Water Gem" class="WaterGem"/></div>
+            <div><input type="button" value="WeaknessPolicy" class="WeaknessPolicy"/></div>            
+        </article>
+
+        <article class="itemwyglad obraz"><img class="itempic"></article>
+        <article class="itemopis"><p class="iteminfo"></p></article>
+
+    </main>
+
+    <script>
+
+        const charcoal = document.querySelector("[class=Charcoal]");
+
+        charcoal.addEventListener("click", itemCharcoal);
+
+        function itemCharcoal() {
+            document.querySelector(".itempic").src="Charcoal.png";
+            document.querySelector(".iteminfo").innerText = " Wzmacnia moc ruchów typu Fire posiadacza o 20% (Boosts the power of the holder's Fire-type moves by 20%)";
+        }
+
+        const watergem = document.querySelector("[class=WaterGem]");
+
+        watergem.addEventListener("click", itemWaterGem);
+
+        function itemWaterGem() {
+            document.querySelector(".itempic").src="WaterGem.png";
+            document.querySelector(".iteminfo").innerText = " Zwiększa moc pierwszego wodnego ruchu posiadacza o 50% i jest zużywana po użyciu (It increases the power of the holder's first Water-type move by 50%, and is consumed after use)";
+        }
+
+        const weaknesspolicy = document.querySelector("[class=WeaknessPolicy]");
+
+        weaknesspolicy.addEventListener("click", itemWeaknessPolicy);
+
+        function itemWeaknessPolicy() {
+            document.querySelector(".itempic").src="WeaknessPolicy.png";
+            document.querySelector(".iteminfo").innerText = "Podnosi Atak i Atak Specjalny posiadacza, jeśli zostanie trafiony superefektywnym ruchem (It raises the holder's Attack and Special Attack if it is hit by a super effective move)";
+
+        }
+
+    </script>
+
+</body>
+
+</html>

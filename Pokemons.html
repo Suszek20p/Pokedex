@@ -25,15 +25,15 @@
 
                 <li> <a href="Pokemons.html" class="now"> Pokemons </a> </li>
 
-                <li> <a href="#"> Abilities </a> </li>
+                <li> <a href="Abilities.html"> Abilities </a> </li>
 
-                <li> <a href="#"> Moves </a> </li>
+                <li> <a href="Moves.html"> Moves </a> </li>
 
-                <li> <a href="#"> Items </a> </li>
+                <li> <a href="Items.html"> Items </a> </li>
 
-                <li> <a href="#"> Natures </a> </li>
+                <li> <a href="Natures.html"> Natures </a> </li>
 
-                <li> <a href="#"> Types </a> </li>
+                <li> <a href="Types.html"> Types </a> </li>
 
                 <li> <a href="#"> Berries </a> </li>
 
@@ -101,16 +101,16 @@
                 <tbody class="srodek_text">
 
                     <tr>
-                        <td><img class="tcharmander">
-                            <p class="tpcharmander"></p>
+                        <td><img class="PokemonBasic">
+                            <p class="PokemonBasic2"></p>
                         </td>
                         <td class="requirements1"></td>
-                        <td><img class="tcharmeleon">
-                            <p class="tpcharmeleon"></p>
+                        <td><img class="PokemonFEvo">
+                            <p class="PokemonFEvo2"></p>
                         </td>
                         <td class="requirements2"></td>
-                        <td><img class="tcharizard">
-                            <p class="tpcharizard"></p>
+                        <td><img class="PokemonSEvo">
+                            <p class="PokemonSEvo2"></p>
                         </td>
 
                     </tr>
@@ -137,7 +137,7 @@
                     document.querySelector(".obraz").src="Charmander.png";
                     document.querySelector(".type").innerText = "Type: Fire";
                     document.querySelector(".category").innerText = "Categoty: Lizard";
-                    document.querySelector(".ability").innerText = "Abilities: Blaze";
+                    document.querySelector(".ability").innerText = "Abilities: Blaze / Solar Power";
                     document.querySelector(".height").innerText = " Height: 0,6 m";
                     document.querySelector(".weight").innerText = " Weight: 8,5 kg";
                     document.querySelector(".grender").innerText = " Grender: ♂ / ♀";
@@ -145,19 +145,51 @@
                     document.querySelector(".weakness").innerText = " Weakness: Water / Ground / Rock";
                     document.querySelector(".resistance").innerText = " Resistance: Bug / Steel / Fire / Grass / Ice / Fairy";
 
-                    document.querySelector(".tcharmander").src="Charmander2.png";                    
-                    document.querySelector(".tcharmeleon").src="Charmeleon2.png";
-                    document.querySelector(".tcharizard").src="Charizard2.png";
+                    document.querySelector(".PokemonBasic").src="Charmander2.png";                    
+                    document.querySelector(".PokemonFEvo").src="Charmeleon2.png";
+                    document.querySelector(".PokemonSEvo").src="Charizard2.png";
                     document.querySelector(".requirements1").innerText = "16 LVL --> ";
                     document.querySelector(".requirements2").innerText = "36 LVL --> ";
-                    document.querySelector(".tpcharmander").innerText = "Charmander";
-                    document.querySelector(".tpcharmeleon").innerText = "Charmeleon";
-                    document.querySelector(".tpcharizard").innerText = "Charizard";
+                    document.querySelector(".PokemonBasic2").innerText = "Charmander";
+                    document.querySelector(".PokemonFEvo2").innerText = "Charmeleon";
+                    document.querySelector(".PokemonSEvo2").innerText = "Charizard";
 
                     document.querySelector("body").style.backgroundColor = "FF9E67";
                     document.querySelector("ul").style.backgroundColor = "FF7A00";
                     document.querySelector(".now").style.backgroundColor = "FFAC30";
                     document.querySelector(".now").style.color = "FF0000";
+				}
+
+                const greninja = document.querySelector("[class=Greninja]");
+
+				greninja.addEventListener("click", info658);
+
+				function info658() {
+					document.querySelector(".name").innerText = "Greninja #658";
+                    document.querySelector(".obraz").src="Greninja.png";
+                    document.querySelector(".type").innerText = "Type: Water / Dark";
+                    document.querySelector(".category").innerText = "Categoty: Ninja";
+                    document.querySelector(".ability").innerText = "Abilities: Torrent / Protean / Battle Bond";
+                    document.querySelector(".height").innerText = " Height: 1,5 m";
+                    document.querySelector(".weight").innerText = " Weight: 40,0 kg";
+                    document.querySelector(".grender").innerText = " Grender: ♂ / ♀";
+                    document.querySelector(".catch").innerText = " Catch Rate: 11,9%";
+                    document.querySelector(".weakness").innerText = " Weakness: Fairy / Grass / Electric / Fighting / Bug";
+                    document.querySelector(".resistance").innerText = " Resistance: Ghost / Steel / Fire / Water / Ice / Dark";
+
+                    document.querySelector(".PokemonBasic").src="Froakie2.png";                    
+                    document.querySelector(".PokemonFEvo").src="Frogadier2.png";
+                    document.querySelector(".PokemonSEvo").src="Greninja2.png";
+                    document.querySelector(".requirements1").innerText = "16 LVL --> ";
+                    document.querySelector(".requirements2").innerText = "36 LVL --> ";
+                    document.querySelector(".PokemonBasic2").innerText = "Froakie";
+                    document.querySelector(".PokemonFEvo2").innerText = "Frogadier";
+                    document.querySelector(".PokemonSEvo2").innerText = "Greninja";
+
+                    document.querySelector("body").style.backgroundColor = "62C6FF";
+                    document.querySelector("ul").style.backgroundColor = "3300FF";
+                    document.querySelector(".now").style.backgroundColor = "308FFF";
+                    document.querySelector(".now").style.color = "4000F8";
 				}
 
 

@@ -221,9 +221,46 @@ article.itemopis {
 	font-size: 20px;
 }
 
+article.berrywyglad {
+
+	margin-right: 30%;
+	margin-left: 10%;
+
+} 
+
+article.berryopis {
+
+	margin-top: 10%;
+	overflow: auto;
+	font-size: 20px;
+}
+
+article.statusopis {
+
+	margin-top: 10%;
+	margin-left: 5%;
+	margin-right: 5%;
+	overflow: auto;
+	font-size: 20px;
+}
+
 article div {
 	display: inline-block;
 	margin: 2px;
+}
+
+article.berries {
+
+	border: 2px solid #000;
+	height: 150px;
+	margin: auto;
+	margin-bottom: 10%;
+	background-color: #FFF;
+	overflow: auto;
+	display: grid;
+	grid-template-columns: auto auto auto;
+	text-align: center;
+	width: 70%;
 }
 
 footer {
@@ -360,65 +397,5 @@ input{
 	background-color: #0F0;
 }
 
-
-/* Staty */
-
-.staty {
-	margin-left: 10px;
-}
-
-/* HP */
-
-.HP39 {
-	background-color: #ff0000;
-	border: 1px solid #a60000;
-	width: 39px;
-	height: 20px;
-}
-
-/* Attack */
-
-.Atk52 {
-	background-color: #f08030;
-	border: 1px solid #9c531f;
-	width: 52px;
-	height: 20px;
-}
-
-/* Defence */
-
-.Def43 {
-	background-color: #f8d030;
-	border: 1px solid #a1871f;
-	width: 43px;
-	height: 20px;
-}
-
-/* Sp.Attack */
-
-.SpAtk60 {
-	background-color: #6890f0;
-	border: 1px solid #445e9c;
-	width: 60px;
-	height: 20px;
-}
-
-/* Sp.Defence */
-
-.SpDef50 {
-	background-color: #78c850;
-	border: 1px solid #4e8234;
-	width: 50px;
-	height: 20px;
-}
-
-/* Speed */
-
-.Spd65 {
-	background-color: #f85888;
-	border: 1px solid #a13959;
-	width: 65px;
-	height: 20px;
-}
 
 

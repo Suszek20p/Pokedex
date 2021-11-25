@@ -1,0 +1,88 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="Pokedex.css">
+
+    <title>Projekt JS Pokedex</title>
+</head>
+
+<body>
+
+    <header>
+
+        <a href="#" class="logo"> POKEDEX </a>
+
+
+
+        <nav class="menu">
+            <ul>
+                <li> <a href="Home.html"> Home </a> </li>
+
+                <li> <a href="Pokemons.html"> Pokemons </a> </li>
+
+                <li> <a href="Abilities.html"> Abilities </a> </li>
+
+                <li> <a href="Moves.html"> Moves </a> </li>
+
+                <li> <a href="Items.html"> Items </a> </li>
+
+                <li> <a href="Natures.html"> Natures </a> </li>
+
+                <li> <a href="Types.html"> Types </a> </li>
+
+                <li> <a href="Berries.html"> Berries </a> </li>
+
+                <li> <a href="Status.html"  class="now"> Status </a> </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main class="pod_headerem">
+
+        <article class="berries">
+            <div><input type="button" value="Burn" class="Burn" /></div>
+            <div><input type="button" value="Paralysis" class="Paralysis"/></div>
+            <div><input type="button" value="Freeze" class="Freeze"/></div>            
+        </article>
+
+        
+        <article class="statusopis"><p class="Statusinfo"></p></article>
+
+    </main>
+
+    <script>
+
+        const Burn = document.querySelector("[class=Burn]");
+
+        Burn.addEventListener("click", StatusBurn);
+
+        function StatusBurn() {
+            document.querySelector(".Statusinfo").innerText = "Stan podpalenia (BRN) zadaje obrażenia co turę i zmniejsza o połowę obrażenia zadawane przez fizyczne ruchy Pokémona (z wyjątkiem Pokémonów ze zdolnością Guts). Podpalenie zadaje obrażenia równe 1/16 jego maksymalnego HP (The burn condition (BRN) inflicts damage every turn and halves damage dealt by a Pokémon's physical moves (except Pokémon with the Guts Ability).  Burn inflicts damage equal to 1/16 of its maximum HP)";
+        }
+
+        const Paralysis = document.querySelector("[class=Paralysis]");
+
+        Paralysis.addEventListener("click", StatusParalysis);
+
+        function StatusParalysis() {
+            document.querySelector(".Statusinfo").innerText = "Stan paraliżu (PAR) zmniejsza statystykę Szybkości Pokémona i powoduje, że ma 25% szans na niemożność użycia ruchu (The paralysis condition (PAR) reduces the Pokémon's Speed stat and causes it to have a 25% chance of being unable to use a move)";
+        }
+
+        const Freeze = document.querySelector("[class=Freeze]");
+
+        Freeze.addEventListener("click", StatusFreeze);
+
+        function StatusFreeze() {
+            document.querySelector(".Statusinfo").innerText = "Stan zamrożenia (FRZ) powoduje, że Pokémon nie może używać ruchów (The freeze condition (FRZ) causes a Pokémon to be unable to use moves)";
+        }
+
+    </script>
+
+</body>
+
+</html>

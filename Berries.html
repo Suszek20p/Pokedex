@@ -1,0 +1,92 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="Pokedex.css">
+
+    <title>Projekt JS Pokedex</title>
+</head>
+
+<body>
+
+    <header>
+
+        <a href="#" class="logo"> POKEDEX </a>
+
+
+
+        <nav class="menu">
+            <ul>
+                <li> <a href="Home.html"> Home </a> </li>
+
+                <li> <a href="Pokemons.html"> Pokemons </a> </li>
+
+                <li> <a href="Abilities.html"> Abilities </a> </li>
+
+                <li> <a href="Moves.html"> Moves </a> </li>
+
+                <li> <a href="Items.html"> Items </a> </li>
+
+                <li> <a href="Natures.html"> Natures </a> </li>
+
+                <li> <a href="Types.html"> Types </a> </li>
+
+                <li> <a href="Berries.html" class="now"> Berries </a> </li>
+
+                <li> <a href="Status.html"> Status </a> </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main class="pod_headerem">
+
+        <article class="berries">
+            <div><input type="button" value="Cheri Berry" class="Cheri_Berry" /></div>
+            <div><input type="button" value="Sitrus Berry" class="Sitrus_Berry"/></div>
+            <div><input type="button" value="Chesto_Berry" class="Chesto_Berry"/></div>            
+        </article>
+
+        <article class="berrywyglad obraz"><img class="berrypic"></article>
+        <article class="berryopis"><p class="berryinfo"></p></article>
+
+    </main>
+
+    <script>
+
+        const Cheri_Berry = document.querySelector("[class=Cheri_Berry]");
+
+        Cheri_Berry.addEventListener("click", berryCheri_Berry);
+
+        function berryCheri_Berry() {
+            document.querySelector(".berrypic").src="Cheri_Berry.png";
+            document.querySelector(".berryinfo").innerText = "Leczy z Paraliżu (Cures Paralysis)";
+        }
+
+        const Sitrus_Berry = document.querySelector("[class=Sitrus_Berry]");
+
+        Sitrus_Berry.addEventListener("click", berrySitrus_Berry);
+
+        function berrySitrus_Berry() {
+            document.querySelector(".berrypic").src="Sitrus_Berry.png";
+            document.querySelector(".berryinfo").innerText = "Przywraca 25% HP (Restores 25% HP)";
+        }
+
+        const Chesto_Berry = document.querySelector("[class=Chesto_Berry]");
+
+        Chesto_Berry.addEventListener("click", berryChesto_Berry);
+
+        function berryChesto_Berry() {
+            document.querySelector(".berrypic").src="Chesto_Berry.png";
+            document.querySelector(".berryinfo").innerText = "Leczy ze Senu (Cures Sleep)";
+
+        }
+
+    </script>
+
+</body>
+
+</html>

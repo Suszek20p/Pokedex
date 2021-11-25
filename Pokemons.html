@@ -18,9 +18,6 @@
 
         <nav class="menu">
             <ul>
-
-                <li> <a href="Pokedex.html"> Test </a> </li>
-
                 <li> <a href="Home.html"> Home </a> </li>
 
                 <li> <a href="Pokemons.html" class="now"> Pokemons </a> </li>
@@ -35,9 +32,9 @@
 
                 <li> <a href="Types.html"> Types </a> </li>
 
-                <li> <a href="#"> Berries </a> </li>
+                <li> <a href="Berries.html"> Berries </a> </li>
 
-                <li> <a href="#"> Status </a> </li>
+                <li> <a href="Status.html"> Status </a> </li>
 
             </ul>
 
@@ -51,7 +48,7 @@
             <div><input type="button" value="Charmander #004" class="Charmander" /></div>
             <div><input type="button" value="Greninja #658" class="Greninja"/></div>
             <div><input type="button" value="Serperior #497" class="Serperior"/></div>            
-            <div><input type="button" value="Eevee #133" class="Eevee"/></div>
+            <div><input type="button" value="Ursaring #217" class="Ursaring"/></div>
             <div><input type="button" value="Amoonguss #591" class="Amoonguss"/></div>
             <div><input type="button" value="Metapod #011" class="Metapod"/></div>
             <div><input type="button" value="Zeraora #807" class="Zeraora"/></div>
@@ -60,8 +57,8 @@
             <div><input type="button" value="Pidove #519" class="Pidove"/></div>
             <div><input type="button" value="Lucario #448" class="Lucario"/></div>
             <div><input type="button" value="Zoroark #571" class="Zoroark"/></div>
-            <div><input type="button" value="Espeon #196" class="Espeon"/></div>
-            <div><input type="button" value="Shedinja #292" class="Shedinja"/></div>
+            <div><input type="button" value="Alakazam #065" class="Alakazam"/></div>
+            <div><input type="button" value="Gengar #094" class="Gengar"/></div>
             <div><input type="button" value="Metagross #376" class="Metagross"/></div>
             <div><input type="button" value="Weavile #461" class="Weavile"/></div>
             <div><input type="button" value="Gardevoir #282" class="Gardevoir"/></div>
@@ -138,10 +135,10 @@
                     document.querySelector(".type").innerText = "Type: Fire";
                     document.querySelector(".category").innerText = "Categoty: Lizard";
                     document.querySelector(".ability").innerText = "Abilities: Blaze / Solar Power";
-                    document.querySelector(".height").innerText = " Height: 0,6 m";
-                    document.querySelector(".weight").innerText = " Weight: 8,5 kg";
+                    document.querySelector(".height").innerText = " Height: 0.6 m";
+                    document.querySelector(".weight").innerText = " Weight: 8.5 kg";
                     document.querySelector(".grender").innerText = " Grender: ♂ / ♀";
-                    document.querySelector(".catch").innerText = " Catch Rate: 11,9%";
+                    document.querySelector(".catch").innerText = " Catch Rate: 11.9%";
                     document.querySelector(".weakness").innerText = " Weakness: Water / Ground / Rock";
                     document.querySelector(".resistance").innerText = " Resistance: Bug / Steel / Fire / Grass / Ice / Fairy";
 
@@ -170,12 +167,12 @@
                     document.querySelector(".type").innerText = "Type: Water / Dark";
                     document.querySelector(".category").innerText = "Categoty: Ninja";
                     document.querySelector(".ability").innerText = "Abilities: Torrent / Protean / Battle Bond";
-                    document.querySelector(".height").innerText = " Height: 1,5 m";
-                    document.querySelector(".weight").innerText = " Weight: 40,0 kg";
+                    document.querySelector(".height").innerText = " Height: 1.5 m";
+                    document.querySelector(".weight").innerText = " Weight: 40.0 kg";
                     document.querySelector(".grender").innerText = " Grender: ♂ / ♀";
-                    document.querySelector(".catch").innerText = " Catch Rate: 11,9%";
+                    document.querySelector(".catch").innerText = " Catch Rate: 11.9%";
                     document.querySelector(".weakness").innerText = " Weakness: Fairy / Grass / Electric / Fighting / Bug";
-                    document.querySelector(".resistance").innerText = " Resistance: Ghost / Steel / Fire / Water / Ice / Dark";
+                    document.querySelector(".resistance").innerText = " Resistance: Ghost / Steel / Fire / Water / Ice / Dark ";
 
                     document.querySelector(".PokemonBasic").src="Froakie2.png";                    
                     document.querySelector(".PokemonFEvo").src="Frogadier2.png";
@@ -192,7 +189,519 @@
                     document.querySelector(".now").style.color = "4000F8";
 				}
 
+                const Serperior = document.querySelector("[class=Serperior]");
 
+				Serperior.addEventListener("click", info497);
+
+				function info497() {
+					document.querySelector(".name").innerText = "Serperior #497";
+                    document.querySelector(".obraz").src="Serperior.png";
+                    document.querySelector(".type").innerText = "Type: Grass";
+                    document.querySelector(".category").innerText = "Categoty: Regal";
+                    document.querySelector(".ability").innerText = "Abilities: Overgrow / Contrary";
+                    document.querySelector(".height").innerText = " Height: 3.3 m";
+                    document.querySelector(".weight").innerText = " Weight: 63.0 kg";
+                    document.querySelector(".grender").innerText = " Grender: ♂ / ♀";
+                    document.querySelector(".catch").innerText = " Catch Rate: 5.9%";
+                    document.querySelector(".weakness").innerText = " Weakness: Fire / Ice / Poison / Flying / Bug";
+                    document.querySelector(".resistance").innerText = " Resistance: Water / Grass / Electric / Ground ";
+
+                    document.querySelector(".PokemonBasic").src="Snivy2.png";                    
+                    document.querySelector(".PokemonFEvo").src="Servine2.png";
+                    document.querySelector(".PokemonSEvo").src="Serperior2.png";
+                    document.querySelector(".requirements1").innerText = "17 LVL --> ";
+                    document.querySelector(".requirements2").innerText = "36 LVL --> ";
+                    document.querySelector(".PokemonBasic2").innerText = "Snivy";
+                    document.querySelector(".PokemonFEvo2").innerText = "Servine";
+                    document.querySelector(".PokemonSEvo2").innerText = "Serperior";
+
+                    document.querySelector("body").style.backgroundColor = "62FF85";
+                    document.querySelector("ul").style.backgroundColor = "42FF00";
+                    document.querySelector(".now").style.backgroundColor = "30FF8F";
+                    document.querySelector(".now").style.color = "53993A";
+				}
+
+                const Ursaring = document.querySelector("[class=Ursaring]");
+
+				Ursaring.addEventListener("click", info217);
+
+                function info217() {
+					document.querySelector(".name").innerText = "Ursaring #217";
+                    document.querySelector(".obraz").src="Ursaring.png";
+                    document.querySelector(".type").innerText = "Type: Normal";
+                    document.querySelector(".category").innerText = "Categoty: Hibernator";
+                    document.querySelector(".ability").innerText = "Abilities: Guts / Quick Feet / Unnerve ";
+                    document.querySelector(".height").innerText = " Height: 1.8 m";
+                    document.querySelector(".weight").innerText = " Weight: 125.8 kg";
+                    document.querySelector(".grender").innerText = " Grender: ♂ / ♀";
+                    document.querySelector(".catch").innerText = " Catch Rate: 7.8%";
+                    document.querySelector(".weakness").innerText = " Weakness: Fighting";
+                    document.querySelector(".resistance").innerText = " Resistance: Ghost ";
+
+                    document.querySelector(".PokemonBasic").src="Teddiursa2.png";                    
+                    document.querySelector(".PokemonFEvo").src="Ursaring2.png";
+                    document.querySelector(".PokemonSEvo").src="nic.png";
+                    document.querySelector(".requirements1").innerText = "30 LVL --> ";
+                    document.querySelector(".requirements2").innerText = "-";
+                    document.querySelector(".PokemonBasic2").innerText = "Teddiursa";
+                    document.querySelector(".PokemonFEvo2").innerText = "Ursaring";
+                    document.querySelector(".PokemonSEvo2").innerText = "-";
+
+                    document.querySelector("body").style.backgroundColor = "BABABA";
+                    document.querySelector("ul").style.backgroundColor = "B5B5B5";
+                    document.querySelector(".now").style.backgroundColor = "9E9E9E";
+                    document.querySelector(".now").style.color = "747474";
+				}
+
+                const Amoonguss = document.querySelector("[class=Amoonguss]");
+
+				Amoonguss.addEventListener("click", info591);
+
+                function info591() {
+					document.querySelector(".name").innerText = "Amoonguss ඞ #591";
+                    document.querySelector(".obraz").src="Amoonguss.png";
+                    document.querySelector(".type").innerText = "Type: Grass / Poison";
+                    document.querySelector(".category").innerText = "Categoty: Mushroom";
+                    document.querySelector(".ability").innerText = "Abilities: Effect Spore / Regenerator ";
+                    document.querySelector(".height").innerText = " Height: 0.6 m";
+                    document.querySelector(".weight").innerText = " Weight: 10.5 kg";
+                    document.querySelector(".grender").innerText = " Grender: ♂ / ♀";
+                    document.querySelector(".catch").innerText = " Catch Rate: 9.8%";
+                    document.querySelector(".weakness").innerText = " Weakness: Fire / Flying / Ice / Psychic";
+                    document.querySelector(".resistance").innerText = " Resistance: Grass / Fighting / Water / Electric / Fairy ";
+
+                    document.querySelector(".PokemonBasic").src="Foongus2.png";                    
+                    document.querySelector(".PokemonFEvo").src="Amoonguss2.png";
+                    document.querySelector(".PokemonSEvo").src="nic.png";
+                    document.querySelector(".requirements1").innerText = "39 LVL --> ";
+                    document.querySelector(".requirements2").innerText = "-";
+                    document.querySelector(".PokemonBasic2").innerText = "Foongus";
+                    document.querySelector(".PokemonFEvo2").innerText = "Amoonguss";
+                    document.querySelector(".PokemonSEvo2").innerText = "-";
+
+                    document.querySelector("body").style.backgroundColor = "BB40DA";
+                    document.querySelector("ul").style.backgroundColor = "A102BB";
+                    document.querySelector(".now").style.backgroundColor = "C91DC2";
+                    document.querySelector(".now").style.color = "780FF00";
+				}
+
+                const Metapod = document.querySelector("[class=Metapod]");
+
+				Metapod.addEventListener("click", info011);
+
+                function info011() {
+					document.querySelector(".name").innerText = "Metapod #011";
+                    document.querySelector(".obraz").src="Metapod.png";
+                    document.querySelector(".type").innerText = "Type: Bug";
+                    document.querySelector(".category").innerText = "Categoty: Cocoon";
+                    document.querySelector(".ability").innerText = "Abilities: Shed Skin";
+                    document.querySelector(".height").innerText = " Height: 0.7 m";
+                    document.querySelector(".weight").innerText = " Weight: 9.9 kg";
+                    document.querySelector(".grender").innerText = " Grender: ♂ / ♀";
+                    document.querySelector(".catch").innerText = " Catch Rate: 15.7%";
+                    document.querySelector(".weakness").innerText = " Weakness: Fire / Flying / Rock";
+                    document.querySelector(".resistance").innerText = " Resistance: Grass / Fighting / Ground ";
+
+                    document.querySelector(".PokemonBasic").src="Caterpie2.png";                    
+                    document.querySelector(".PokemonFEvo").src="Metapod2.png";
+                    document.querySelector(".PokemonSEvo").src="Butterfree2.png";
+                    document.querySelector(".requirements1").innerText = "7 LVL --> ";
+                    document.querySelector(".requirements2").innerText = "10 LVL -->";
+                    document.querySelector(".PokemonBasic2").innerText = "Caterpie";
+                    document.querySelector(".PokemonFEvo2").innerText = "Metapod";
+                    document.querySelector(".PokemonSEvo2").innerText = "Butterfree";
+
+                    document.querySelector("body").style.backgroundColor = "0FB600";
+                    document.querySelector("ul").style.backgroundColor = "0B8B00";
+                    document.querySelector(".now").style.backgroundColor = "46B800";
+                    document.querySelector(".now").style.color = "80FF00";
+				}
+
+                const Zeraora = document.querySelector("[class=Zeraora]");
+
+				Zeraora.addEventListener("click", info807);
+
+                function info807() {
+					document.querySelector(".name").innerText = "Zeraora #807";
+                    document.querySelector(".obraz").src="Zeraora.png";
+                    document.querySelector(".type").innerText = "Type: Electric";
+                    document.querySelector(".category").innerText = "Categoty: Thunderclap";
+                    document.querySelector(".ability").innerText = "Abilities: Volt Absorb";
+                    document.querySelector(".height").innerText = " Height: 1.5 m";
+                    document.querySelector(".weight").innerText = " Weight: 44.5 kg ";
+                    document.querySelector(".grender").innerText = " Grender: - ";
+                    document.querySelector(".catch").innerText = " Catch Rate: 0.4%";
+                    document.querySelector(".weakness").innerText = " Weakness: Ground";
+                    document.querySelector(".resistance").innerText = " Resistance: Electric / Flying / Steel";
+
+                    document.querySelector(".PokemonBasic").src="Zeraora2.png";                    
+                    document.querySelector(".PokemonFEvo").src="nic.png";
+                    document.querySelector(".PokemonSEvo").src="nic.png";
+                    document.querySelector(".requirements1").innerText = "-";
+                    document.querySelector(".requirements2").innerText = "-";
+                    document.querySelector(".PokemonBasic2").innerText = "Zeraora";
+                    document.querySelector(".PokemonFEvo2").innerText = "-";
+                    document.querySelector(".PokemonSEvo2").innerText = "-";
+
+                    document.querySelector("body").style.backgroundColor = "FBFF3C";
+                    document.querySelector("ul").style.backgroundColor = "C1E000";
+                    document.querySelector(".now").style.backgroundColor = "AFA800";
+                    document.querySelector(".now").style.color = "DBFF00";
+				}
+
+                const Regirock = document.querySelector("[class=Regirock]");
+
+				Regirock.addEventListener("click", info377);
+
+                function info377() {
+					document.querySelector(".name").innerText = "Regirock #377";
+                    document.querySelector(".obraz").src="Regirock.png";
+                    document.querySelector(".type").innerText = "Type: Rock";
+                    document.querySelector(".category").innerText = "Categoty: Rock Peak";
+                    document.querySelector(".ability").innerText = "Abilities:  Clear / Body Sturdy";
+                    document.querySelector(".height").innerText = " Height: 1.7 m";
+                    document.querySelector(".weight").innerText = " Weight: 230.0 kg ";
+                    document.querySelector(".grender").innerText = " Grender: - ";
+                    document.querySelector(".catch").innerText = " Catch Rate: 0.4%";
+                    document.querySelector(".weakness").innerText = " Weakness: Ground / Water / Grass / Fighting / Steel";
+                    document.querySelector(".resistance").innerText = " Resistance: Fire / Flying / Normal";
+
+                    document.querySelector(".PokemonBasic").src="Regirock2.png";                    
+                    document.querySelector(".PokemonFEvo").src="nic.png";
+                    document.querySelector(".PokemonSEvo").src="nic.png";
+                    document.querySelector(".requirements1").innerText = "-";
+                    document.querySelector(".requirements2").innerText = "-";
+                    document.querySelector(".PokemonBasic2").innerText = "Regirock";
+                    document.querySelector(".PokemonFEvo2").innerText = "-";
+                    document.querySelector(".PokemonSEvo2").innerText = "-";
+
+                    document.querySelector("body").style.backgroundColor = "76604C";
+                    document.querySelector("ul").style.backgroundColor = "5A5036";
+                    document.querySelector(".now").style.backgroundColor = "8C673C";
+                    document.querySelector(".now").style.color = "633500";
+				}
+
+                const Groudon = document.querySelector("[class=Groudon]");
+
+				Groudon.addEventListener("click", info383);
+
+                function info383() {
+					document.querySelector(".name").innerText = "Groudon #383";
+                    document.querySelector(".obraz").src="Groudon.png";
+                    document.querySelector(".type").innerText = "Type: Rock";
+                    document.querySelector(".category").innerText = "Categoty: Continent ";
+                    document.querySelector(".ability").innerText = "Abilities:  Drought";
+                    document.querySelector(".height").innerText = " Height: 3.5 m";
+                    document.querySelector(".weight").innerText = " Weight: 950.0 kg ";
+                    document.querySelector(".grender").innerText = " Grender: - ";
+                    document.querySelector(".catch").innerText = " Catch Rate: 0.4%";
+                    document.querySelector(".weakness").innerText = " Weakness: Water / Grass / Ice";
+                    document.querySelector(".resistance").innerText = " Resistance: Electric / Poison / Rock";
+
+                    document.querySelector(".PokemonBasic").src="Groudon2.png";                    
+                    document.querySelector(".PokemonFEvo").src="nic.png";
+                    document.querySelector(".PokemonSEvo").src="nic.png";
+                    document.querySelector(".requirements1").innerText = "-";
+                    document.querySelector(".requirements2").innerText = "-";
+                    document.querySelector(".PokemonBasic2").innerText = "Groudon";
+                    document.querySelector(".PokemonFEvo2").innerText = "-";
+                    document.querySelector(".PokemonSEvo2").innerText = "-";
+
+                    document.querySelector("body").style.backgroundColor = "B47840";
+                    document.querySelector("ul").style.backgroundColor = "9A7F3A";
+                    document.querySelector(".now").style.backgroundColor = "BE925E";
+                    document.querySelector(".now").style.color = "69B5400";
+				}
+
+                const Pidove = document.querySelector("[class=Pidove]");
+
+                Pidove.addEventListener("click", info519);
+
+                function info519() {
+                    document.querySelector(".name").innerText = "Pidove #383";
+                    document.querySelector(".obraz").src="Pidove.png";
+                    document.querySelector(".type").innerText = "Type: Normal / Flying";
+                    document.querySelector(".category").innerText = "Categoty: Tiny Pigeon  ";
+                    document.querySelector(".ability").innerText = "Abilities: Big Pecks / Super Luck / Rivalry ";
+                    document.querySelector(".height").innerText = " Height: 0.3 m";
+                    document.querySelector(".weight").innerText = " Weight: 2.1 kg ";
+                    document.querySelector(".grender").innerText = " Grender: ♂ / ♀ ";
+                    document.querySelector(".catch").innerText = " Catch Rate: 33.3%";
+                    document.querySelector(".weakness").innerText = " Weakness: Electric / Ice / Rock";
+                    document.querySelector(".resistance").innerText = " Resistance: Grass / Ground / Bug / Ghost";
+
+                    document.querySelector(".PokemonBasic").src="Pidove2.png";                    
+                    document.querySelector(".PokemonFEvo").src="Tranquill2.png";
+                    document.querySelector(".PokemonSEvo").src="UnfezantM2.png";
+                    document.querySelector(".requirements1").innerText = "21 LVL -->";
+                    document.querySelector(".requirements2").innerText = "32 LVL -->";
+                    document.querySelector(".PokemonBasic2").innerText = "Pidove";
+                    document.querySelector(".PokemonFEvo2").innerText = "Tranquill";
+                    document.querySelector(".PokemonSEvo2").innerText = "Unfezant";
+
+                    document.querySelector("body").style.backgroundColor = "CBEAF1";
+                    document.querySelector("ul").style.backgroundColor = "8AFCE7";
+                    document.querySelector(".now").style.backgroundColor = "62F5FE";
+                    document.querySelector(".now").style.color = "01BCBC";
+                }
+
+                const Lucario = document.querySelector("[class=Lucario]");
+
+                Lucario.addEventListener("click", info448);
+
+                function info448() {
+                    document.querySelector(".name").innerText = "Lucario #448";
+                    document.querySelector(".obraz").src="Lucario.png";
+                    document.querySelector(".type").innerText = "Type: Fighting / Steel";
+                    document.querySelector(".category").innerText = "Categoty: Aura ";
+                    document.querySelector(".ability").innerText = "Abilities: Steadfast / Inner Focus / Justified  ";
+                    document.querySelector(".height").innerText = " Height: 1.2 m";
+                    document.querySelector(".weight").innerText = " Weight: 54.0 kg  ";
+                    document.querySelector(".grender").innerText = " Grender: ♂ / ♀ ";
+                    document.querySelector(".catch").innerText = " Catch Rate: 5.9% ";
+                    document.querySelector(".weakness").innerText = " Weakness: Fire / Fighting / Ground";
+                    document.querySelector(".resistance").innerText = " Resistance: Normal / Grass / Ice / Poison / Bug / Rock / Dragon / Steel";
+
+                    document.querySelector(".PokemonBasic").src="Riolu2.png";                    
+                    document.querySelector(".PokemonFEvo").src="Lucario2.png";
+                    document.querySelector(".PokemonSEvo").src="nic.png";
+                    document.querySelector(".requirements1").innerText = "High Friendship + Daytime + LVL UP -->";
+                    document.querySelector(".requirements2").innerText = "-";
+                    document.querySelector(".PokemonBasic2").innerText = "Riolu";
+                    document.querySelector(".PokemonFEvo2").innerText = "Lucario";
+                    document.querySelector(".PokemonSEvo2").innerText = "-";
+
+                    document.querySelector("body").style.backgroundColor = "E77C5A";
+                    document.querySelector("ul").style.backgroundColor = "FA7930";
+                    document.querySelector(".now").style.backgroundColor = "FF5C00";
+                    document.querySelector(".now").style.color = "C90000";
+                }
+
+                const Zoroark = document.querySelector("[class=Zoroark]");
+
+                Zoroark.addEventListener("click", info571);
+
+                function info571() {
+                    document.querySelector(".name").innerText = "Zoroark #571";
+                    document.querySelector(".obraz").src="Zoroark.png";
+                    document.querySelector(".type").innerText = "Type: Dark";
+                    document.querySelector(".category").innerText = "Categoty: Illusion Fox ";
+                    document.querySelector(".ability").innerText = "Abilities: Illusion  ";
+                    document.querySelector(".height").innerText = " Height: 1.6 m";
+                    document.querySelector(".weight").innerText = " Weight: 81.1 kg  ";
+                    document.querySelector(".grender").innerText = " Grender: ♂ / ♀ ";
+                    document.querySelector(".catch").innerText = " Catch Rate: 5.9% ";
+                    document.querySelector(".weakness").innerText = " Weakness: Bug / Fighting / Fairy";
+                    document.querySelector(".resistance").innerText = " Resistance: Ghost / Psychic / Dark";
+
+                    document.querySelector(".PokemonBasic").src="Zorua2.png";                    
+                    document.querySelector(".PokemonFEvo").src="Zoroark2.png";
+                    document.querySelector(".PokemonSEvo").src="nic.png";
+                    document.querySelector(".requirements1").innerText = "30 LVL -->";
+                    document.querySelector(".requirements2").innerText = "-";
+                    document.querySelector(".PokemonBasic2").innerText = "Zorua";
+                    document.querySelector(".PokemonFEvo2").innerText = "Zoroark";
+                    document.querySelector(".PokemonSEvo2").innerText = "-";
+
+                    document.querySelector("body").style.backgroundColor = "0E0062";
+                    document.querySelector("ul").style.backgroundColor = "090070";
+                    document.querySelector(".now").style.backgroundColor = "03008B";
+                    document.querySelector(".now").style.color = "0E0062";
+                }
+
+
+                const Alakazam = document.querySelector("[class=Alakazam]");
+
+                Alakazam.addEventListener("click", info065);
+
+                function info065() {
+                    document.querySelector(".name").innerText = "Alakazam #065";
+                    document.querySelector(".obraz").src="Alakazam.png";
+                    document.querySelector(".type").innerText = "Type: Psichic";
+                    document.querySelector(".category").innerText = "Categoty: Psichic ";
+                    document.querySelector(".ability").innerText = "Abilities: Synchronize / Inner Focus / Magic Guard ";
+                    document.querySelector(".height").innerText = " Height: 1.5 m";
+                    document.querySelector(".weight").innerText = " Weight: 48.0 kg ";
+                    document.querySelector(".grender").innerText = " Grender: ♂ / ♀ ";
+                    document.querySelector(".catch").innerText = " Catch Rate: 6.5% ";
+                    document.querySelector(".weakness").innerText = " Weakness: Bug / Ghost / Dark";
+                    document.querySelector(".resistance").innerText = " Resistance: Psychic / Fighting ";
+
+                    document.querySelector(".PokemonBasic").src="Abra2.png";                    
+                    document.querySelector(".PokemonFEvo").src="Kadabra2.png";
+                    document.querySelector(".PokemonSEvo").src="Alakazam2.png";
+                    document.querySelector(".requirements1").innerText = "16 LVL -->";
+                    document.querySelector(".requirements2").innerText = "Trade -->";
+                    document.querySelector(".PokemonBasic2").innerText = "Abra";
+                    document.querySelector(".PokemonFEvo2").innerText = "Kadabra";
+                    document.querySelector(".PokemonSEvo2").innerText = "Alakazam";
+
+                    document.querySelector("body").style.backgroundColor = "FD5D97";
+                    document.querySelector("ul").style.backgroundColor = "EF0869";
+                    document.querySelector(".now").style.backgroundColor = "FF4B96";
+                    document.querySelector(".now").style.color = "E10036";
+                }
+
+                const Gengar = document.querySelector("[class=Gengar]");
+
+                Gengar.addEventListener("click", info094);
+
+                function info094() {
+                    document.querySelector(".name").innerText = "Gengar #094";
+                    document.querySelector(".obraz").src="Gengar.png";
+                    document.querySelector(".type").innerText = "Type: Ghost / Poison";
+                    document.querySelector(".category").innerText = "Categoty: Shadow ";
+                    document.querySelector(".ability").innerText = "Abilities: Cursed Body ";
+                    document.querySelector(".height").innerText = " Height: 1.5 m";
+                    document.querySelector(".weight").innerText = " Weight: 40.5 kg ";
+                    document.querySelector(".grender").innerText = " Grender: ♂ / ♀ ";
+                    document.querySelector(".catch").innerText = " Catch Rate: 5.9% ";
+                    document.querySelector(".weakness").innerText = " Weakness: Psychic / Ghost / Dark";
+                    document.querySelector(".resistance").innerText = " Resistance: Normal / Grass / Fighting / Poison / Bug / Fairy ";
+
+                    document.querySelector(".PokemonBasic").src="Gastly2.png";                    
+                    document.querySelector(".PokemonFEvo").src="Haunter2.png";
+                    document.querySelector(".PokemonSEvo").src="Gengar2.png";
+                    document.querySelector(".requirements1").innerText = "25 LVL -->";
+                    document.querySelector(".requirements2").innerText = "Trade -->";
+                    document.querySelector(".PokemonBasic2").innerText = "Gastly";
+                    document.querySelector(".PokemonFEvo2").innerText = "Haunter";
+                    document.querySelector(".PokemonSEvo2").innerText = "Gengar";
+
+                    document.querySelector("body").style.backgroundColor = "6300A0";
+                    document.querySelector("ul").style.backgroundColor = "61009C";
+                    document.querySelector(".now").style.backgroundColor = "9700DE";
+                    document.querySelector(".now").style.color = "5300A6";
+                }
+
+                const Metagross = document.querySelector("[class=Metagross]");
+
+                Metagross.addEventListener("click", info376);
+
+                function info376() {
+                    document.querySelector(".name").innerText = "Metagross #376";
+                    document.querySelector(".obraz").src="Metagross.png";
+                    document.querySelector(".type").innerText = "Type: Steel / Psychic ";
+                    document.querySelector(".category").innerText = "Categoty: Iron Leg ";
+                    document.querySelector(".ability").innerText = "Abilities: Clear Body / Light Metal ";
+                    document.querySelector(".height").innerText = " Height: 1.6 m";
+                    document.querySelector(".weight").innerText = " Weight: 550.0 kg ";
+                    document.querySelector(".grender").innerText = " Grender: - ";
+                    document.querySelector(".catch").innerText = " Catch Rate: 0.4% ";
+                    document.querySelector(".weakness").innerText = " Weakness: Ghost / Dark / Fire / Ground";
+                    document.querySelector(".resistance").innerText = " Resistance: Normal / Grass / Ice / Poison / Flying / Psychic / Rock / Dragon / Steel / Fairy ";
+
+                    document.querySelector(".PokemonBasic").src="Beldum2.png";                    
+                    document.querySelector(".PokemonFEvo").src="Metang2.png";
+                    document.querySelector(".PokemonSEvo").src="Metagross2.png";
+                    document.querySelector(".requirements1").innerText = "20 LVL -->";
+                    document.querySelector(".requirements2").innerText = "45 LVL -->";
+                    document.querySelector(".PokemonBasic2").innerText = "Beldum";
+                    document.querySelector(".PokemonFEvo2").innerText = "Metang";
+                    document.querySelector(".PokemonSEvo2").innerText = "Metagross";
+
+                    document.querySelector("body").style.backgroundColor = "CFCFCF";
+                    document.querySelector("ul").style.backgroundColor = "E2E1E2";
+                    document.querySelector(".now").style.backgroundColor = "E2E1E2";
+                    document.querySelector(".now").style.color = "8B8B8B";
+                }
+
+                const Weavile = document.querySelector("[class=Weavile]");
+
+                Weavile.addEventListener("click", info461);
+
+                function info461() {
+                    document.querySelector(".name").innerText = "Weavile #461";
+                    document.querySelector(".obraz").src="Weavile.png";
+                    document.querySelector(".type").innerText = "Type: Ice / Dark ";
+                    document.querySelector(".category").innerText = "Categoty: Sharp Claw ";
+                    document.querySelector(".ability").innerText = "Abilities: Pressure / Pickpocket ";
+                    document.querySelector(".height").innerText = " Height: 1.1 m";
+                    document.querySelector(".weight").innerText = " Weight: 34.0 kg ";
+                    document.querySelector(".grender").innerText = " Grender: ♂ / ♀ ";
+                    document.querySelector(".catch").innerText = " Catch Rate: 5.9% ";
+                    document.querySelector(".weakness").innerText = " Weakness: Fire / Fighting / Rock / Steel / Fairy / Bug";
+                    document.querySelector(".resistance").innerText = " Resistance: Ice / Psychic / Dark / Ghost  ";
+
+                    document.querySelector(".PokemonBasic").src="Sneasel2.png";                    
+                    document.querySelector(".PokemonFEvo").src="Weavile2.png";
+                    document.querySelector(".PokemonSEvo").src="nic.png";
+                    document.querySelector(".requirements1").innerText = "Hold Razor Claw + Night Time + LVL UP -->";
+                    document.querySelector(".requirements2").innerText = "-";
+                    document.querySelector(".PokemonBasic2").innerText = "Sneasel";
+                    document.querySelector(".PokemonFEvo2").innerText = "Weavile";
+                    document.querySelector(".PokemonSEvo2").innerText = "-";
+
+                    document.querySelector("body").style.backgroundColor = "50EAFF";
+                    document.querySelector("ul").style.backgroundColor = "4EF4FF";
+                    document.querySelector(".now").style.backgroundColor = "7ADFFF";
+                    document.querySelector(".now").style.color = "00C2FF";
+                }
+
+                const Gardevoir = document.querySelector("[class=Gardevoir]");
+
+                Gardevoir.addEventListener("click", info282);
+
+                function info282() {
+                    document.querySelector(".name").innerText = "Gardevoir #282";
+                    document.querySelector(".obraz").src="Gardevoir.png";
+                    document.querySelector(".type").innerText = "Type: Fairy / Psychic ";
+                    document.querySelector(".category").innerText = "Categoty: Embrace ";
+                    document.querySelector(".ability").innerText = "Abilities: Pressure / Pickpocket ";
+                    document.querySelector(".height").innerText = " Height: 1.6 m";
+                    document.querySelector(".weight").innerText = " Weight: 48.4 kg ";
+                    document.querySelector(".grender").innerText = " Grender: ♂ / ♀ ";
+                    document.querySelector(".catch").innerText = " Catch Rate: 5.9% ";
+                    document.querySelector(".weakness").innerText = " Weakness: Steel / Ghost / Poison";
+                    document.querySelector(".resistance").innerText = " Resistance: Dragon / Psychic / Fighting  ";
+
+                    document.querySelector(".PokemonBasic").src="Ralts2.png";                    
+                    document.querySelector(".PokemonFEvo").src="Kirlia2.png";
+                    document.querySelector(".PokemonSEvo").src="Gardevoir2.png";
+                    document.querySelector(".requirements1").innerText = "20 LVL -->";
+                    document.querySelector(".requirements2").innerText = "30 LVL -->";
+                    document.querySelector(".PokemonBasic2").innerText = "Ralts";
+                    document.querySelector(".PokemonFEvo2").innerText = "Kirlia";
+                    document.querySelector(".PokemonSEvo2").innerText = "Gardevoir";
+
+                    document.querySelector("body").style.backgroundColor = "FF91FB";
+                    document.querySelector("ul").style.backgroundColor = "FC63FF";
+                    document.querySelector(".now").style.backgroundColor = "FA00FF";
+                    document.querySelector(".now").style.color = "C000A2";
+                }
+            
+
+                const Goomy = document.querySelector("[class=Goomy]");
+
+                Goomy.addEventListener("click", info704);
+
+                function info704() {
+                    document.querySelector(".name").innerText = "Goomy #704";
+                    document.querySelector(".obraz").src="Goomy.png";
+                    document.querySelector(".type").innerText = "Type: Dragon ";
+                    document.querySelector(".category").innerText = "Categoty: Soft Tissue ";
+                    document.querySelector(".ability").innerText = "Abilities: Sap Sipper / Hydration / Gooey ";
+                    document.querySelector(".height").innerText = " Height: 0.3 m";
+                    document.querySelector(".weight").innerText = " Weight: 2.8 kg ";
+                    document.querySelector(".grender").innerText = " Grender: ♂ / ♀ ";
+                    document.querySelector(".catch").innerText = " Catch Rate: 5.9% ";
+                    document.querySelector(".weakness").innerText = " Weakness: Fairy / Ice / Dragon";
+                    document.querySelector(".resistance").innerText = " Resistance: Fire / Water / Electric / Grass   ";
+
+                    document.querySelector(".PokemonBasic").src="Goomy2.png";                    
+                    document.querySelector(".PokemonFEvo").src="Sliggoo2.png";
+                    document.querySelector(".PokemonSEvo").src="Goodra2.png";
+                    document.querySelector(".requirements1").innerText = "40 LVL -->";
+                    document.querySelector(".requirements2").innerText = " During Rain + 50 LVL -->";
+                    document.querySelector(".PokemonBasic2").innerText = "Goomy";
+                    document.querySelector(".PokemonFEvo2").innerText = "Sliggoo";
+                    document.querySelector(".PokemonSEvo2").innerText = "Goodra";
+
+                    document.querySelector("body").style.backgroundColor = "0057FF";
+                    document.querySelector("ul").style.backgroundColor = "4500D7";
+                    document.querySelector(".now").style.backgroundColor = "6100FF";
+                    document.querySelector(".now").style.color = "002FA7";
+                }
  
     </script>
 </body>
